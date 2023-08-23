@@ -1,0 +1,127 @@
+
+
+<form id="form2">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="purchasegrp">
+                <label for="name" class="purchaseinfo"> <small
+                        class="text-danger">*</small> Training program
+                    name</label>
+                <input type="text" id="" name="training_program"
+                    class="form-control purchaseselect">
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <div class="purchasegrp">
+                <label for="name" class="purchaseinfo"> <small
+                        class="text-danger">*</small> Training
+                    places</label>
+                <input type="text" id="" name="training_place"
+                    class="form-control purchaseselect">
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="purchasegrp">
+                <label for="name" class="purchaseinfo"> <small
+                        class="text-danger">*</small> Start time</label>
+                <input type="date" id="" name="start_time"
+                    class="form-control purchaseselect">
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="purchasegrp">
+                <label for="name" class="purchaseinfo"> <small
+                        class="text-danger">*</small> Finish
+                    time</label>
+                <input type="date" id="" name="finish_time"
+                    class="form-control purchaseselect">
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <div class="purchasegrp">
+                <label for="name" class="purchaseinfo mb-2"> Training
+                    results</label>
+                    <div class="summernote">Hello Summernote</div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <div class="purchasegrp">
+                <label for="name" class="purchaseinfo"> Degree</label>
+                <input type="text" id=""
+                    class="form-control purchaseselect">
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <div class="purchasegrp">
+                <label for="name" class="purchaseinfo"> Note</label>
+                <textarea name="" id="" rows="4"
+                    class="form-control textaria"></textarea>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal-footer taskfooter">
+        <button type="button" class="taskclose1"
+            data-bs-dismiss="modal">Close</button>
+        <button type="submit" class="tasksave1">Save</button>
+    </div>
+
+</form>
+
+
+<!-- summernote script -->
+<script>
+    $('.summernote').summernote({
+       dialogsInBody: true
+       //,airMode: true
+    });
+ </script>
+
+<script>
+    $('#form2').formValidation({
+        framework: 'bootstrap',
+        fields: {
+
+
+            training_program: {
+                validators: {
+                    notEmpty: {
+                        message: 'Enter training program'
+                    }
+                }
+            },
+            training_place: {
+                validators: {
+                    notEmpty: {
+                        message: 'Enter training places'
+                    }
+                }
+            },
+            start_time: {
+                validators: {
+                    notEmpty: {
+                        message: 'Enter start time'
+                    }
+                }
+            },
+            finish_time: {
+                validators: {
+                    notEmpty: {
+                        message: 'Enter finish time'
+                    }
+                }
+            },
+
+        }
+    })
+</script>

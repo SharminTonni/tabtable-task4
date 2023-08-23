@@ -1,0 +1,461 @@
+/****dependants****/
+.pendingbtn{
+    border: none;
+      background-color: rgba(40, 184, 218, 0.93);
+      border-radius: 4px;
+      margin-right: 30px;
+      margin-top: 15px;
+      padding: 4px 20px 4px;
+      font-size: 16px;
+      font-family: var(--primary-font);
+      float: none !important;
+      color: whitesmoke;
+  }
+  .tickbtn{
+    border: none;
+    background-color: var(--taskoverviewbtn-color);
+    border-radius: 4px;
+    margin-right: 3px;
+    
+    padding: 5px 10px;
+    font-size: 16px;
+    font-family: var(--primary-font);
+    float: none !important;
+    color: whitesmoke;
+  }
+  
+  @media (max-width: 768px) {
+    .tickbtn :hover {
+      background-color: #6FA326 !important;
+  
+    }
+  }
+  .pendingftr{
+    margin-top: 10px;
+  }
+/****layoff checklist*****/
+
+
+.eyebtn{
+  border:1px solid #e6e9eb;
+  background-color: #f1f5f7;
+  border-radius: 4px;
+  padding: 5px 8px 5px;
+}
+
+.fa-eye {
+  border:none;
+  /*color: #415164;*/
+  background-color: #f1f5f7 !important;
+  
+}
+.dataTables_wrapper .dataTables_filter input{
+	padding: .2em !important;
+}
+button.dt-button:hover:not(.disabled), div.dt-button:hover:not(.disabled), a.dt-button:hover:not(.disabled), input.dt-button:hover:not(.disabled) {
+  border: 1px solid rgba(0, 0, 0, 0.3);
+   background-color: #fff;
+background-image:none!important;
+    
+}
+button.dt-btn-split-drop:hover {
+border-left: none!important;
+}
+
+.plusred{
+  color: red;
+}
+
+.approvedbtn {
+  border: none;
+  background-color: var(--taskoverviewbtn-color);
+  border-radius: 4px;
+  margin-right: 30px;
+  margin-top: 15px;
+  padding: 4px 20px 4px;
+  font-size: 16px;
+  font-family: var(--primary-font);
+  float: none !important;
+  color: whitesmoke;
+}
+.finishedbtn {
+  border: none;
+  background-color: var(--taskoverviewbtn-color);
+  border-radius: 4px;
+  margin-left: 5px;
+   padding: 4px 20px 4px;
+  font-size: 16px;
+  font-family: var(--primary-font);
+  float: none !important;
+  color: whitesmoke;
+}
+.finishedbtn:hover{
+  background-color: #74b31b;
+}
+
+.boxin{
+  border: 1px solid #919191;
+  border-radius: 4px;
+  padding: 4px 5px !important;
+ 
+}
+/*****contract*****/
+.file_in {
+  border: 1px solid #919191;
+  padding: 4.5px 12px;
+  border-radius: 6px 0px 0px 6px;
+  width: 100%
+}
+
+.border6px {
+  border-radius: 0px 6px 6px 0px;
+}
+
+.style_for_select {
+  margin-top: 5px;
+  border: 1px solid #919191 !important;
+  height: 36px !important;
+  border-radius: 4px;
+}
+
+
+.white_button {
+  color: #415164 !important;
+  background-color: #f1f5f7 !important;
+  border: 1px solid #e6e9eb !important;
+}
+
+.white_button:hover {
+  background-color: #e6e6e6 !important;
+  border-color: #e6e9eb !important;
+}
+
+.small_dropdown_dj {
+  margin: 0;
+  margin-top: 5px !important;
+  padding: 0 !important;
+  border-radius: 6px !important;
+  /* border-color: #e6e9eb!important; */
+  min-height: auto !important;
+}
+
+.small_dropdown_dj>li>a:hover {
+  outline: 0;
+  background-color: #e4e8f1 !important;
+}
+
+.dataTables_wrapper .dataTables_filter input {
+  padding: 4px 6px !important;
+}
+
+/* for labels  */
+.finished_label {
+  background: rgba(40, 184, 218, 0.93);
+  border: 1px solid rgb(40, 184, 218);
+  color: #ffffff !important;
+  padding: 0.3em 0.7em 0.3em;
+  border-radius: 0.25em;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+}
+
+.valid_label {
+  background: rgb(132, 197, 41);
+  border: 1px solid rgb(132, 197, 41);
+  color: #ffffff !important;
+  padding: 0.3em 0.7em 0.3em;
+  border-radius: 0.25em;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+}
+
+.draft_label {
+  background: rgba(255, 152, 0, 1);
+  border: 1px solid rgba(255, 152, 0, 1);
+  color: #ffffff !important;
+  padding: 0.3em 0.7em 0.3em;
+  border-radius: 0.25em;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+}
+
+
+.not_start {
+  color: #989898;
+  border: 1px solid #989898;
+  padding: 4px 9px;
+  border-radius: 0.25em;
+
+}
+
+.in_progress {
+  color: #03a9f4;
+  border: 1px solid #03a9f4;
+  padding: 4px 9px;
+  border-radius: 0.25em;
+
+}
+
+.finishedd {
+  color: #84c529;
+  border: 1px solid #84c529;
+  padding: 4px 9px;
+  border-radius: 0.25em;
+
+}
+
+.on_hold {
+  color: #ff6f00;
+  border: 1px solid #ff6f00;
+  padding: 4px 9px;
+  border-radius: 0.25em;
+
+}
+
+.bodyy {
+  background-color: #dee3e9;
+}
+
+.textaria {
+  width: 99%;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-right: 3px;
+  margin-top: 5px;
+  margin-left: 3px;
+  border-color: #919191 !important;
+  box-shadow: none !important;
+  height: 72px !important;
+  border-radius: 4px;
+}
+
+.textaria:focus {
+  outline: 0;
+}
+
+.attachment_1 {
+  border: 1px dashed #03a9f4;
+  ;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  text-align: center;
+  color: #03a9f4;
+  ;
+}
+
+.logged_time {
+  color: #31708f;
+  background-color: #d9edf7;
+  border-color: #bce8f1;
+}
+
+.borderblue{
+  border: 1px solid #bce8f1;
+}
+
+.bold {
+  font-weight: 500;
+}
+
+@media (min-width: 992px){
+  .col-md-25 {
+      width: 20%;
+      float: left;
+  }
+}
+.btn-editt{
+  color: #415164;
+  background-color: #f1f5f7;
+  border: 1px solid #e6e9eb;
+}
+.btn-editt:hover{
+  color: #415164;
+  background-color: #e1e4e6;
+}
+.colorpic{
+  background-color: inherit;
+  height: 33.5px;
+  margin-top: 5px;
+  border: 1px solid #aaaaaa;
+}
+
+@media (min-width: 992px) {
+  .col-lg-25 {
+    width: 20%;
+    float: left;
+  }
+}
+.notification-box-all{
+  margin-bottom: 10px;
+  padding: 7px 10px;
+}
+.unread{
+  background-color: #f0f4fd;
+}
+.labell{
+  border: 1px solid;
+  border-radius: .25em;
+  padding: .3em .7em;
+  font-size: 12px;
+  text-align: center;
+  white-space: nowrap;
+}
+.finish{
+  color: #84c529;
+  border-color: #84c529;
+}
+.holdd{
+  color: #ff6f00;
+  border-color: #ff6f00;
+}
+.unfinishh{
+  color: #03a9f4;
+  border-color: #03a9f4;
+}
+.not-startt{
+  color: #989898;
+  border-color: #989898;
+}
+/*****settings*****/
+.pencil_edit{
+  color: #415164;
+  background-color: #f1f5f7;
+  border: 1px solid #e6e9eb;
+}
+.pencil_edit:hover{
+  background-color: #e6e6e6;
+}
+.plusbtns{
+  background-color: #24ACF2 !important;
+  border: none;
+  padding: 6px 10px 5px;
+  border-radius: 4px;
+  color: #fff;
+  box-shadow: none;
+  
+}
+.minusbtns{
+  color: #fff;
+  background-color: #dc3545;
+  border: none;
+  padding: 6px 10px 5px;
+  border-radius: 4px;
+  box-shadow: none;
+
+  
+}
+.closexbtn{
+  color: #fff;
+  background-color: #dc3545;
+  border: none;
+  padding: 5px 10px 5px;
+  border-radius: 4px;
+  box-shadow: none;
+
+}
+
+.tabspace{
+  padding: 4px 10px 4px;
+}
+.tabrows{
+  margin-left: 8px;
+ }
+.tabtable{
+  margin-left: 8px;
+}
+.hrdesc {
+  margin-top: 7px;
+  margin-bottom: 6px;
+}
+.plusmar{
+  margin-top: 7px;
+}
+.viewcheck {
+  font-family: var(--primary-font);
+  margin-left: 5px;
+
+  margin-top: 5px;
+  margin-right: 3px;
+ 
+}
+.contjob {
+ 
+  margin-bottom: 3px;
+}
+.gensethdr{
+  margin-top: 3px;
+  margin-bottom: 3px;
+ 
+}
+.tabdata{
+  margin-bottom: 12px;
+}
+
+.hrques{
+  font-size: 11px;
+}
+
+
+
+/***job description****/
+.attachacc{
+  margin-top: 7px;
+}
+.Jobdescnote{
+  margin-bottom: 5px;
+}
+
+.jobimportbtn{
+border: none;
+background-color: var(--newtaskbtn-color);
+border-radius: 4px;
+margin-left: 17px;
+margin-top: 15px;
+padding: 4px 20px 4px;
+font-size: 16px;
+font-family: var(--primary-font);
+color: whitesmoke;
+}
+@media (max-width: 768px) {
+  .jobimportbtn {
+
+    width: 92%;
+    margin-left: 15px !important;
+  }
+}
+.importback {
+  color: #415164;
+  background-color: #f1f5f7;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  margin-left: 3px;
+  margin-top: 15px;
+  padding: 4px 20px 4px;
+  font-size: 16px;
+  font-family: var(--primary-font);
+}
+@media (max-width: 768px){
+.importback {
+  margin-left: 17px !important;
+  width: 92%;
+}
+}
+.bluebtnclr{
+  color: #fff !important;
+  background-color: #28b8da !important;
+  font-weight: 600 !important;
+
+}
+
+.headclr{
+  color: #337ab7 !important;
+}
+
+.addbtnbg{
+  background-color: #f0f0f0;
+  color: #30a9f4;
+  
+}

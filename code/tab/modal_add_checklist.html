@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+
+<style>
+  .help-block {
+    color: red;
+  }
+</style>
+
+<form id="addlead">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="purchasegrps droppadd">
+        <label for="tags" class="purchaseinfo ml-0 pb-2"><span class="required">*</span> Select staff</label>
+        <select class="form-control selectpicker" data-live-search="true" name="name">
+          <option value=""></option>
+          <option value="0">john</option>
+          <option value="1">peter</option>
+          <option value="2">gen</option>
+          <option value="3">vin</option>
+          <option value="4">james</option>
+        </select>
+      </div>
+    </div>
+    <div class="col-md-12">
+      <div class="row mt-2 pb-2 bbt">
+        <h6 class="headclr quescircl">&nbsp;<i class="bi bi-info-circle-fill "></i>&nbsp;Information
+          management reception</h6>
+      </div>
+
+      <div class="col-md-12">
+        <div class="row title">
+          <div class="row">
+            <div class="col-10">
+              <div class="purchasegrps">
+                <input type="text" id="" class="form-control purchaseselects" placeholder="Title">
+              </div>
+            </div>
+            <div class="col-2 pt-2">
+              <button type="button" id="plus1" class="plusbtns"><i class="fa fa-plus pluxbtn text-white"></i></button>
+            </div>
+          </div>
+
+          <div id="box2" class="row">
+            <div class="col-9">
+              <div class="purchasegrps">
+                <input type="text" id="" class="form-control purchaseselects" placeholder="Sub title">
+              </div>
+            </div>
+            <div class="col-2 pt-2">
+              <button type="button" id="plus2" class="plusbtns "><i class="fa fa-plus"></i></button>
+            </div>
+          </div>
+
+        </div>
+        <div id="box" class="row">
+          <div id="child_box" class="col-md-12">
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="col-md-12">
+      <div class="row mt-3 pb-2 bbt">
+        <h6 class="headclr"><i class="bi bi-star-fill">&nbsp;</i>Asset allocation</h6>
+      </div>
+
+      <div class="col-md-12">
+        <div class="row">
+          <div class="col-md-12">
+            <div id="pbox" class="col-md-12">
+              <div class="row">
+                <div class="col-10">
+                  <div class="purchasegrps">
+                    <input type="text" id="" class="form-control purchaseselects" placeholder="Enter asset name">
+                  </div>
+                </div>
+                <div class="col-2 pt-2">
+                  <button type="button" onclick="appen()" class="plusbtns"><i class="fa fa-plus"></i></button>
+                </div>
+              </div>
+              <div class="row parent">
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div class="col-md-12">
+      <div class="row">
+        <div class="row mt-3 pb-2  text-start">
+          <h6 class="headclr"><i class="bi bi-mortarboard-fill"></i>Training</h6>
+        </div><hr class="fileline">
+      </div>
+      </div>
+
+
+      <div class="col-md-12">
+        <div class="purchasegrp">
+          <label for="tags" class="purchaseinfo mb-1">Type of training</label>
+          <select class="form-control selectpicker">
+            <option value="0"></option>
+            <option value="1">Hyderabad</option>
+            <option value="2">Vizag</option>
+            <option value="3">Kochi</option>
+            <option value="4">Assigned</option>
+            <option value="5">Dharmavaram</option>
+            <option value="6">Bengaluru</option>
+            <option value="7">Lucknow</option>
+            <option value="8">Madurai</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="col-md-12">
+        <div class="purchasegrp">
+          <label for="tags" class="purchaseinfo mb-1"><span class="text-danger">*</span>Training program</label>
+          <select class="form-control selectpicker" name="program">
+            <option value=""></option>
+            <option value="1">Hyderabad</option>
+            <option value="2">Vizag</option>
+            <option value="3">Kochi</option>
+            <option value="4">Assigned</option>
+            <option value="5">Dharmavaram</option>
+            <option value="6">Bengaluru</option>
+            <option value="7">Lucknow</option>
+            <option value="8">Madurai</option>
+          </select>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal-footer taskfooter">
+      <button type="button" class="taskclose1" data-bs-dismiss="modal">Close</button>
+
+      <button type="submit" class="tasksave1">Save</button>
+    </div>
+  </div>
+</form>
+
+<script>
+  $('#addlead').formValidation({
+    framework: 'bootstrap',
+    fields: {
+
+
+      name: {
+        validators: {
+          notEmpty: {
+            message: 'Select staff name'
+          }
+        }
+      },
+      program: {
+        validators: {
+          notEmpty: {
+            message: 'Select training program'
+          }
+        }
+      },
+
+    }
+  })
+</script>
+
+<script>
+  $(document).ready(function () {
+    var el1 = '<div class="row"><div class="col-10"><div class="purchasegrps"><input type="text" id="" class="form-control purchaseselects" placeholder="Title"></div></div><div class="col-2 pt-2"><button type="button" id="minus1" class="minusbtns"><i class="fa fa-minus"></i></button> </div> </div>';
+    var el2 = '<div class="row box2"><div class="col-9"><div class="purchasegrps"><input type="text" id="" class="form-control purchaseselects" placeholder="Sub title"></div></div><div class="col-2 pt-2"><button type="button" class="plus2 plusbtns"><i class="fa fa-plus"></i></button></div></div>';
+    var el3 = '<div id="cp" class="row"><div class="col-9"><div class="purchasegrps"><input type="text" id="" class="form-control purchaseselects" placeholder="Sub title"></div></div><div class="col-2 pt-2"><button type="button" id="minus2" class="minusbtns"><i class="fa fa-minus"></i></button></div></div>';
+
+    var el4 = '<div id="pp1">' + el1 + el2 + '</div>';
+
+    $("#plus1").click(function () {
+      $("#box #child_box").append(el4);
+    });
+    $(document).on('click', '#minus1', function () {
+      $(this).closest("div#pp1").remove();
+    });
+    $("#plus2").click(function () {
+      $(this).closest("#box2").append(el3);
+    });
+    $(document).on('click', '#minus2', function () {
+      $(this).closest("div#cp").remove();
+    });
+
+    $(document).on('click', '.plus2', function () {
+      $(this).closest(".box2").append(el3);
+    });
+
+
+  });
+</script>
+
+<script>
+  var el5 = '<div class="row parent"><div class="col-10"><div class="purchasegrps"> <input type="text" id="" class="form-control purchaseselects" placeholder="Enter asset name"></div></div><div class="col-2 pt-2"><button type="button" onclick="erase2()" class="erase btn shadow-none btn-floating btn-danger btn-sm btnsmal m-0"><i class="fa fa-minus"></i></button></div></div>';
+  function appen() {
+    $("#pbox").append(el5);
+  }
+  $(document).on('click', '.erase', function () {
+    $(this).closest("div.parent").remove();
+  });
+
+</script>

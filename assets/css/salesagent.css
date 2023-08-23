@@ -1,0 +1,377 @@
+.eed{
+    background-color: #84c529 !important;
+    color: white !important;
+    margin: -1px;
+    font-size: 6px;
+}
+.pen{
+    background-color: #ff6f00 !important;
+    color: white !important;
+    margin: -1px;
+    font-size: 6px;
+}
+.rem{
+    background-color: #fc2d42 !important;
+    color: white !important;
+    margin: -1px;
+    font-size: 6px;
+
+}
+.wbt{
+    color: #008ece;
+
+}
+.dept{
+    color: black; border: 1px solid #bfcbd9;
+    padding: 3px 8px;
+    border-radius: 4px ;
+  }
+.agent{
+    width: 250px !important;
+}
+/* active agents boxes  */ 
+.agentbox .progress{
+    height: 8px;
+  }
+  .ta1{
+    font-size: 10px;
+    color:#008ece;
+   
+  }
+  .progress .box1{
+    background-color: #50574e; 
+   
+  }
+  
+  .ta2{
+    color:#84c529;
+    font-size: 10px;
+  }
+  .progress .box2{
+    background-color:#84c529;
+   
+  }
+  
+  .ta3{
+    color:#fc2d42;
+    font-size: 10px;
+  }
+  .progress .box3{
+    background-color: #fc2d42;  
+  }
+  
+  .ta4{
+    color:#008ece;
+    font-size: 10px;
+  }
+  .progress .box4{
+    background-color:#28b8da;
+  
+  }
+  .ta5{
+    color:#ff6f00;  
+    font-size: 10px;
+  }
+  .progress .box5{
+    background-color: #ff6f00;  
+    
+   
+  }
+  .ta6{
+    color:#84c529;
+    font-size: 10px;
+  }
+  .progress .box6{
+    background-color:#84c529   
+  }
+  
+
+.btndwd{
+    size: 15px;
+}
+
+.btn-pdf{
+    border: none;
+    background-color:#e6e9eb ;
+}
+.tblrow:hover{
+    background-color:#e6e9eb
+}
+.tab-content{
+    background-color: #ffffff!important;
+}
+.acceptedd{
+    background-color: #84c529!important;
+    color: white;
+    border: 1px solid #84c529!important;
+    padding: 4px 14px;
+    font-size: 15px;
+    text-align: center;
+    float: right;
+    margin-left: 5px;
+
+}
+
+.mtop20{
+    font-size: 14px;
+}
+/* for x */
+.x-border{
+    width: 100%;
+}
+.trprimry{
+    background-color: #314e73;
+    color: white;
+}
+.thcolor{
+    color:  #314e73;
+    font-weight: 200;
+}
+
+.table .personlinfo{
+    border: none;
+}
+/* for textarea tab */
+.textreaa{
+    border: 1px solid black;
+    width: 400px;
+    height: 200px;
+
+}
+/*order number*/
+
+ /*section{
+   padding: 12px 24px 12px 24px;
+   background-color: #e6e9eb;
+ }*/
+ .new-container{
+   padding: 20px;
+   background-color: #fdfdfd;
+   width: 100%;
+   height: 800px;
+ }
+
+ .tblrow:hover{
+     background-color:#e6e9eb;  
+ }
+
+ .btnns2{
+  font-size: 13px;
+  width: 115px; 
+ }
+
+ .bnsss{
+  text-transform: uppercase;
+  outline-offset: 0;
+  background-color: #ff6f00;
+  width: 175px;
+  height: 38px;
+  font-size: 14px;
+  overflow: hidden;
+  border: none;
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
+  color: white;
+  font-weight: 550;
+ }
+
+
+ .btnmore .morbtn{
+    height: 38px;
+   background-color: #f1f5f7;
+   border: 1px solid #e6e9eb;
+ }
+ 
+ .btnmore .morbtn:hover{
+   background-color: #cecece;
+  
+ }
+ .btnpdf{  
+    height: 38px;
+   margin-left: -55px;
+ }
+ 
+ .btnpdf .pdfbtn{
+   background-color:#f1f5f7;
+   border: 1px solid #e6e9eb;
+ }
+ 
+ .btnpdf .pdfbtn:hover{
+   background-color:#cecece;
+   
+ }
+
+ .tab-content{
+     background-color: #ffffff!important;
+ }
+ .theddd{
+   background-color: #415164;
+   color: white;
+ }
+ 
+ .tablinks.active {
+     border-bottom: 2px solid #02a9f4 !important;
+ }
+
+ .tab {
+   overflow: hidden;
+ }
+ 
+ .tabcontent {
+   display: none;
+ }
+ 
+ .ribbn{ 
+  width: 12em;
+  height: 12em;
+  position: absolute;
+  top: 5px;
+  right: 14px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+ }
+
+ .ribbn::after{
+ content: 'APPROVED';
+ color: white;
+ position: absolute;
+ display: flex;
+ justify-content: center;
+ transform: rotate(45deg) translateY(-3.8em);
+ width: 100%;
+ height: 2.2em;
+ background-color: #84c529;
+ align-items: center;
+ font-weight: 600;
+ }
+ 
+ .ribbn::before{
+   content: '';
+ width: 0.8em;
+ height: 0.5em;
+ top: 0em;
+ left: 3.7em;
+ 
+ background-color: #718655;
+ position: absolute;
+ box-shadow: 11em -11em #96d347;
+ }
+ 
+ .grpbutton{
+   display: flex;
+   justify-content: space-evenly;
+ }
+ 
+ .tab {
+   overflow: hidden;
+ }
+ 
+ .tab button {
+ /*  padding: 14px 16px;*/
+   transition: 0.3s;
+ }
+ 
+ .tab button:hover {
+   color: #2fbef7;
+ }
+ 
+ .tab button.active {
+   color: #2bcdf5;
+ }
+ 
+ .tabcontent {
+   display: none;
+   padding: 6px 12px;
+ 
+   border-top: none;
+ }
+
+ .tab {
+ /* overflow: auto;*/
+  white-space: nowrap; 
+  }
+  @media (max-width: 767px) {
+    .tab {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    }
+    .tablexxx{
+      display: flex;
+      flex-wrap: nowrap;
+      overflow-x: auto;
+      scroll-behavior: smooth;
+      width: 100%;
+      }
+
+  .tab button {
+    flex: 0 0 auto;
+    width: auto;
+    margin-right: 10px;
+    }
+    .grpbutton{
+      width: 100%;
+      display: flex;
+      justify-content: space-evenly;
+    }
+    .grpbutton{
+      margin-left: -11px;
+    }
+    .btnpdf{
+      width: 60px;
+      margin-left: -32px;
+    }
+    .btnmore{
+      width: 76px;
+      margin: 0px 5px 0px 5px;
+      
+    }
+    .morbtn{
+      margin-left: 0px;
+    }
+      .bnsss{
+        width:105px;
+        font-size: 8.2px;
+    }
+    div.ribbn{
+      clip-path: polygon(61% 0, 98% 39%, 103% 35%, 110% 76%, 74% 45%, 24% 0); 
+    }
+    .btnns2 .bnsss{
+      background-color: #ff6f00;
+      overflow: hidden;
+     }
+ }
+
+ .newsubmenuul{
+    overflow-y: scroll;
+    max-height: 180px;
+    width: 200px;
+ }
+
+ /*filter*/
+ .newsubmenuul
+ {
+  min-width: 80%;
+  border: 1px solid rgba(0,0,0,.15);
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: left;
+ }
+
+  .newsubmenuul li:hover{
+    color: black !important;
+    background: #e4e8f1;
+
+  }
+  @media (max-width: 768px) {
+  .newsubmenuul{
+   background-color:#fff;
+  visibility:visible !important;
+    border-top: none !important;
+   top:32px !important;
+   right: 0 !important;
+ }
+ }

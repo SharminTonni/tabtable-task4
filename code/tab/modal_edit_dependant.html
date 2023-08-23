@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+
+<form id="form2">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="purchasegrp">
+                <label for="name" class="purchaseinfo"> <small
+                        class="text-danger">*</small> Dependant name</label>
+                <input type="text" id="" name="name"
+                    class="form-control purchaseselect">
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <div class="purchasegrp">
+                <label for="name" class="purchaseinfo"> <small
+                        class="text-danger">*</small> Relationship</label>
+                <input type="text" id="" name="relationship"
+                    class="form-control purchaseselect">
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="purchasegrp">
+                <label for="name" class="purchaseinfo"> <small
+                        class="text-danger">*</small> Date of birth</label>
+                <input type="date" id="" name="date_of_birth"
+                    class="form-control purchaseselect">
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <div class="purchasegrp">
+                <label for="name" class="purchaseinfo"> Citizen
+                    identification</label>
+                <input type="number" id=""
+                    class="form-control purchaseselect">
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <div class="purchasegrp">
+                <label for="name" class="purchaseinfo"> Reason</label>
+                <input type="text" id=""
+                    class="form-control purchaseselect">
+            </div>
+        </div>
+    </div>
+
+    <div class="modal-footer taskfooter">
+        <button type="button" class="taskclose1"
+            data-bs-dismiss="modal">Close</button>
+        <button type="submit" class="tasksave1">Save</button>
+    </div>
+
+</form>
+
+<script>
+    $('#form2').formValidation({
+        framework: 'bootstrap',
+        fields: {
+
+
+            name: {
+                validators: {
+                    notEmpty: {
+                        message: 'Enter dependant name'
+                    }
+                }
+            },
+            relationship: {
+                validators: {
+                    notEmpty: {
+                        message: 'Enter dependant name'
+                    }
+                }
+            },
+            date_of_birth: {
+                validators: {
+                    notEmpty: {
+                        message: 'Enter date of birth'
+                    }
+                }
+            },
+
+        }
+    })
+</script>

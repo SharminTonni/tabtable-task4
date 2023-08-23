@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+
+<style>
+    .groupicon {
+        color: #0000ee !important;
+        border-color: #919191;
+        background-color: inherit !important;
+        padding: 5px 12px !important;
+        margin-top: 5px;
+        height: 33.5px !important;
+    }
+</style>
+
+<form action="" id="form">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="row bbt m-2">
+                <div class="tab">
+                    <ul class="un-list">
+                        <button type="button" class="tablinks active" onclick="opentab2(event, 'profile4')">Profile</button>
+                        <button type="button" class="tablinks" onclick="opentab2(event, 'information4')">Related
+                            Information</button>
+                    </ul>
+                </div>
+            </div>
+            <div id="profile4" class="tabcontent2" style="display:block">
+                <div class="containerbdy">
+                    <div class="row m-2 mt-3">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                <i class="bi bi-question-circle-fill"></i>
+                                Enable
+                                Email
+                                Two Factor Authentication
+                            </label>
+                        </div>
+                    </div>
+                    <div class="row m-2">
+                        <div class="sub-divs-image-box-right-side-add-client">
+                            <div id="profile-container">
+                                <image id="profileImage" src="../../assets/img/user.png"width="150px" height="150px" />
+                            </div>
+                            <h2 class="background-class"><i class="" aria-hidden="true"></i></h2>
+                            <!-- <p class="image-upload-e"><i class="fa fa-camera" aria-hidden="true"></i></p> -->
+
+                            <input id="imageUpload" type="file" name="image" required="" capture style="display:none">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="purchasegrps">
+                                <label for="Website" class="purchaseinfo"><span class="required">*</span> Staff
+                                    code</label>
+                                <input type="text" id="" name="staff_code" class="form-control purchaseselects">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="purchasegrps">
+                                <label for="Website" class="purchaseinfo"><span class="required">*</span> First
+                                    name</label>
+                                <input type="text" id="" name="first_name" class="form-control purchaseselects">
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="purchasegrps">
+                                <label for="Website" class="purchaseinfo"><span class="required">*</span> Last
+                                    name</label>
+                                <input type="text" id="" name="last_name" class="form-control purchaseselects">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="purchasegrps">
+                                <label for="Website" class="purchaseinfo">Gender</label>
+                                <select class="selectpicker form-control mt-1">
+                                    <option value="male">Male</option>
+                                    <option value="female">Female</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="purchasegrps">
+                                <label for="Website" class="purchaseinfo">Birthday</label>
+                                <input type="date" id="" class="form-control purchaseselects">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="purchasegrps">
+                                <label for="Website" class="purchaseinfo"><span class="required">*</span> Email</label>
+                                <input type="text" id="" name="email" class="form-control purchaseselects">
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="purchasegrps">
+                                <label for="Website" class="purchaseinfo">Phone</label>
+                                <input type="text" id="" class="form-control purchaseselects">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="purchasegrps">
+                                <label for="Website" class="purchaseinfo">Workplace</label>
+                                <select class="selectpicker form-control mt-1">
+                                    <option value="">chennai</option>
+                                    <option value="">bengalur</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="purchasegrps">
+                                <label for="Website" class="purchaseinfo"><span class="required">*</span> Status</label>
+                                <input type="date" id="" name="status" class="form-control purchaseselects">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="purchasegrps">
+                                <label for="Website" class="purchaseinfo"><span class="required">*</span> Job
+                                    Position</label>
+                                <select name="job_position" class="selectpicker form-control mt-1"
+                                    data-live-search="true">
+                                    <option value=""></option>
+                                    <option value="0">Hr</option>
+                                    <option value="1">Admin</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="purchasegrps">
+                                <label for="Website" class="purchaseinfo">Direct
+                                    manager</label>
+                                <select class="selectpicker form-control mt-1" data-live-search="true">
+                                    <option value="0"></option>
+                                    <option value="1"></option>
+                                </select>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="purchasegrps">
+                                <label for="Website" class="purchaseinfo">Academic
+                                    level</label>
+                                <select class="selectpicker form-control mt-1">
+                                    <option value="0">2</option>
+                                    <option value="1">2</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-lg-12">
+
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="purchasegrps">
+                                <label for="Website" class="purchaseinfo">Default
+                                    Language</label>
+                                <select class="selectpicker form-control mt-1">
+                                    <option value="0"></option>
+                                    <option value="1"></option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="purchasegrps">
+                                <label for="Website" class="purchaseinfo">Direction</label>
+                                <select class="selectpicker form-control mt-1">
+                                    <option value="0"></option>
+                                    <option value="1"></option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="purchasegrps">
+                                <label for="country" class="purchaseinfo"><i class="bi bi-question-circle-fill"></i>
+                                    Email
+                                    signature</label>
+                                <textarea class="purchasedescriptions"></textarea>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="purchasegrps">
+                                <label for="country" class="purchaseinfo">Other
+                                    information</label>
+                                <textarea class="purchasedescriptions"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row m-2 mt-3">
+                        Member departments
+                        <div class="form-check pt-3">
+                            <input class="form-check-input" type="checkbox" value="" id="">
+                            <label class="form-check-label" for="">
+                                SALES
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="">
+                            <label class="form-check-label" for="">
+                                Management
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="">
+                            <label class="form-check-label" for="">
+                                Professional Services
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="">
+                            <label class="form-check-label" for="">
+                                Sales
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="">
+                            <label class="form-check-label" for="">
+                                Private
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="">
+                            <label class="form-check-label" for="">
+                                sale
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="">
+                            <label class="form-check-label" for="">
+                                Hr
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="">
+                            <label class="form-check-label" for="">
+                                Ecommerce
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="">
+                            <label class="form-check-label" for="">
+                                Purchase
+                            </label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="purchasegrps">
+                                <label for="Website" class="purchaseinfo"><a href="#"><i
+                                            class="bi bi-pencil-square"></i></a><span class="required">*</span>
+                                    data</label>
+                                <input type="date" id="" name="date" class="form-control purchaseselect">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row pb-3 bbt">
+                        <div class="col-lg-12">
+                            <div class="purchasegrps">
+                                <label for="Website" class="purchaseinfo"><a href="#"><i
+                                            class="bi bi-pencil-square"></i></a>
+                                    Test amount</label>
+                                <input type="text" id="" class="form-control purchaseselect">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row pb-3 bbt">
+                        <div class="col-lg-12">
+                            <div class="purchasegrps">
+                                <label for="Website" class="purchaseinfo"><a href="#"><i
+                                            class="bi bi-pencil-square"></i></a>
+                                    employee</label>
+                                <input type="text" id="" class="form-control purchaseselect">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row pb-3 bbt">
+                        <div class="col-lg-12">
+                            <div class="purchasegrps">
+                                <label for="Website" class="purchaseinfo"><a href="#"><i
+                                            class="bi bi-pencil-square"></i></a>
+                                    Project</label>
+                                <input type="text" id="" class="form-control purchaseselect">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row pb-2">
+                        <div class="col-lg-12">
+                            <div class="purchasegrps">
+                                <label for="Website" class="purchaseinfo"><span class="required">*</span>
+                                    Password</label>
+                                <div class="input-group flex-nowrap">
+                                    <input type="password" id="" name="password" class="form-control purchaseselect">
+                                    <span class="input-group-text groupicon"><a href="#"><i
+                                                class="fa fa-eye"></i></a></span>
+                                    <span class="input-group-text groupicon"><a href="#"><i
+                                                class="fa fa-refresh"></i></a></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-12">
+                            <p class="text-muted"><small>Note: if you
+                                    populate
+                                    this field, password will be changed on
+                                    this
+                                    member.</small></p>
+                            <p class="text-muted"><small>Password last changed:
+                                    <span style="border-bottom:1px dashed">2
+                                        months
+                                        ago</span></small></p>
+                        </div>
+
+
+                    </div>
+                </div>
+
+            </div>
+            <div id="information4" class="tabcontent2" style="display:none">
+                <div class="containerbdy">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="purchasegrps">
+                                <label for="Website" class="purchaseinfo">Origins</label>
+                                <input type="text" id="" class="form-control purchaseselects">
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="purchasegrps">
+                                <label for="Website" class="purchaseinfo">Marital
+                                    status</label>
+                                <select class="selectpicker form-control mt-1">
+                                    <option value="0"></option>
+                                    <option value="1"></option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="purchasegrps">
+                                <label for="Website" class="purchaseinfo">Current
+                                    Address</label>
+                                <input type="text" id="" class="form-control purchaseselects">
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="purchasegrps">
+                                <label for="Website" class="purchaseinfo">Country</label>
+                                <input type="text" id="" class="form-control purchaseselects">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="purchasegrps">
+                                <label for="Website" class="purchaseinfo">Current
+                                    Address</label>
+                                <input type="text" id="" class="form-control purchaseselects">
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="purchasegrps">
+                                <label for="Website" class="purchaseinfo">Country</label>
+                                <input type="text" id="" class="form-control purchaseselects">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="purchasegrps">
+                                <label for="Website" class="purchaseinfo">Place
+                                    of
+                                    birth</label>
+                                <input type="text" id="" class="form-control purchaseselects">
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="purchasegrps">
+                                <label for="Website" class="purchaseinfo">Religion</label>
+                                <input type="text" id="" class="form-control purchaseselects">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="purchasegrps">
+                                <label for="Website" class="purchaseinfo">ID/Citizen
+                                    Identity Card</label>
+                                <input type="text" id="" class="form-control purchaseselects">
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="purchasegrps">
+                                <label for="Website" class="purchaseinfo">Date
+                                    of
+                                    issue</label>
+                                <input type="date" id="" class="form-control purchaseselects">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="purchasegrps">
+                                <label for="Website" class="purchaseinfo">Place
+                                    of
+                                    issue</label>
+                                <input type="text" id="" class="form-control purchaseselects">
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="purchasegrps">
+                                <label for="Website" class="purchaseinfo">Resident</label>
+                                <input type="text" id="" class="form-control purchaseselects">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="purchasegrps">
+                                <label for="Website" class="purchaseinfo">Bank
+                                    account
+                                    number</label>
+                                <input type="text" id="" class="form-control purchaseselects">
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="purchasegrps">
+                                <label for="Website" class="purchaseinfo">Bank
+                                    account
+                                    name</label>
+                                <input type="text" id="" class="form-control purchaseselects">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="purchasegrps">
+                                <label for="Website" class="purchaseinfo">Bank
+                                    name</label>
+                                <input type="text" id="" class="form-control purchaseselects">
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="purchasegrps">
+                                <label for="Website" class="purchaseinfo">Personal
+                                    tax
+                                    identification number</label>
+                                <input type="text" id="" class="form-control purchaseselects">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="purchasegrps">
+                                <label for="Website" class="purchaseinfo"><i class="bi bi-facebook"></i>
+                                    Facebook</label>
+                                <input type="text" id="" class="form-control purchaseselects">
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="purchasegrps">
+                                <label for="Website" class="purchaseinfo"><i class="bi bi-linkedin"></i>
+                                    LinkedIn</label>
+                                <input type="text" id="" class="form-control purchaseselects">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row pb-3 bbt">
+                        <div class="col-lg-6">
+                            <div class="purchasegrps">
+                                <label for="Website" class="purchaseinfo"><i class="bi bi-skype"></i> Skype</label>
+                                <input type="text" id="" class="form-control purchaseselects">
+                            </div>
+                        </div>
+                    </div>
+    
+    
+                </div>
+            </div>
+        </div>
+
+        
+    </div>
+
+    <div class="modal-footer taskfooter">
+        <button type="button" class="taskclose1" data-bs-dismiss="modal">Close</button>
+        <button type="submit" class="tasksave1">Save</button>
+    </div>
+</form>
+
+<script>
+    $('#form').formValidation({
+        framework: 'bootstrap',
+        fields: {
+
+
+            staff_code: {
+                validators: {
+                    notEmpty: {
+                        message: 'Enter staff code'
+                    }
+                }
+            },
+            first_name: {
+                validators: {
+                    notEmpty: {
+                        message: 'Enter first name'
+                    }
+                }
+            },
+            last_name: {
+                validators: {
+                    notEmpty: {
+                        message: 'Enter last name'
+                    }
+                }
+            },
+            email: {
+                validators: {
+                    notEmpty: {
+                        message: 'Enter email'
+                    }
+                }
+            },
+            status: {
+                validators: {
+                    notEmpty: {
+                        message: 'Enter status'
+                    }
+                }
+            },
+            job_position: {
+                validators: {
+                    notEmpty: {
+                        message: 'Enter job position'
+                    }
+                }
+            },
+            date: {
+                validators: {
+                    notEmpty: {
+                        message: 'Enter date'
+                    }
+                }
+            },
+            password: {
+                validators: {
+                    notEmpty: {
+                        message: 'Enter password'
+                    }
+                }
+            },
+
+        }
+    })
+</script>

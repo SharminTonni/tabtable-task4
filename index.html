@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>CRM-Task</title>
+
+    <!--Bootstrap 5 CSS--->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="assets\Bootstrap5\css\bootstrap.css"
+    />
+
+    <!--Bootstrap Icons-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
+    />
+
+    <!--datatables CSS--->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="assets\datatables\css\datatables.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="assets\datatables\css\jquery.dataTables.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="assets\datatables\css\buttons.dataTables.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/de952d599f.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!--Bootstrap 5 JS--->
+    <script
+      type="text/javascript"
+      src="assets\Bootstrap5\js/bootstrap.bundle.min.js"
+    ></script>
+
+    <!--Datatables js-->
+    <script type="text/javascript" src="assets\js\jquery-3.3.1.js"></script>
+    <script
+      type="text/javascript"
+      src="assets\js\jquery.dataTables.min.js"
+    ></script>
+    <script type="text/javascript" src="./datatable/datatable.js"></script>
+    <script
+      type="text/javascript"
+      src="assets\js\dataTables.responsive.min.js"
+    ></script>
+
+    <!--Datatable dropdown----->
+    <script
+      type="text/javascript"
+      src="assets\js\datatables.pdfmake.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="assets\js\dataTables.buttons.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="assets\js\datatables.vfs_fonts.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="assets\js\datatables.jszip.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="assets\js\buttons.html5.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="assets\js\buttons.print.min.js"
+    ></script>
+
+    <!--Dropdown select-->
+    <link
+      rel="stylesheet"
+      href="assets\Bootstrap5\css\bootstrap-select.min.css"
+    />
+    <script src="assets\Bootstrap5\js/bootstrap-select.min.js"></script>
+
+    <script src="https://Login.loyalwings.com/assets/js/formValidation.min.js"></script>
+    <script src="https://Login.loyalwings.com/assets/js/bootstrap_validation.min.js"></script>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.9/summernote-lite.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.9/summernote-lite.js"></script>
+
+    <link rel="stylesheet" href="assets\css\style.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/dropzone/4.3.0/dropzone.css"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/dropzone/4.3.0/dropzone.js"
+      type="text/javascript"
+    ></script>
+
+    <style>
+      .help-block {
+        margin-left: 9px;
+        color: red;
+      }
+    </style>
+  </head>
+  <body class="bodyy">
+    <div class="container-fluid p-3">
+      <div class="row gy-3">
+        <div class="col-md-12 col-lg-3">
+          <div class="row gy-4 px-2">
+            <div class="col-12 px-3 shadow" style="background-color: #fff">
+              <!-- Nav tabs -->
+              <div class="tab1">
+                <ul
+                  class="nav navbar-pills navbar-pills-flat nav-tabs nav-stacked"
+                >
+                  <li role="presentation" class="tab_cart my-2">
+                    <button
+                      type="button"
+                      class="tablinks1 active py-1"
+                      onclick="opentab(event, 'profile')"
+                    >
+                      Training programs
+                    </button>
+                  </li>
+                </ul>
+                <ul
+                  class="nav navbar-pills navbar-pills-flat nav-tabs nav-stacked"
+                >
+                  <li role="presentation" class="tab_cart my-2">
+                    <button
+                      type="button"
+                      class="tablinks1 py-1"
+                      onclick="opentab(event, 'contract')"
+                    >
+                      Training libraries
+                    </button>
+                  </li>
+                </ul>
+                <ul
+                  class="nav navbar-pills navbar-pills-flat nav-tabs nav-stacked"
+                >
+                  <li role="presentation" class="tab_cart my-2">
+                    <button
+                      type="button"
+                      class="tablinks1 py-1"
+                      onclick="opentab(event, 'dependant')"
+                    >
+                      Training results
+                    </button>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-12 col-lg-9 px-2">
+          <div class="p-3" style="background-color: #fff">
+            <!-- Tab panes -->
+            <!-- Training tab -->
+            <!-- 1 -->
+            <div id="profile" class="tabcontent1" style="display: block">
+              <div class="row pt-2">
+                <a
+                  href="#"
+                  role="button"
+                  onclick="showMdModal('code/tab/modal_edit_profile.html','Staff profile update');"
+                  ><button class="top-add-button">ADD</button>
+                </a>
+              </div>
+              <div class="row">
+                <div class="col ms-1">
+                  <div class="demo-html mt-0 table-responsive">
+                    <table
+                      class="example display responsive nowrap tblalign"
+                      style="width: 100%"
+                    >
+                      <thead class="theadrow">
+                        <tr>
+                          <th><input type="checkbox" /></th>
+                          <th class="fw-normal">Name</th>
+                          <th class="fw-normal">Training type</th>
+                          <th class="fw-normal">Description</th>
+                          <th class="fw-normal">Minimum point</th>
+                          <th class="fw-normal">Created date</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td><input type="checkbox" /></td>
+                          <td>
+                            <br />
+                            <a
+                              href="../../Contracts/contracts.html"
+                              class="rw-class custom-name"
+                              >Kỹ Năng Bán Hàng</a
+                            >
+                            <p class="header-effect">
+                              <a
+                                onclick="showMdModal('code/tab/contract_profile_modal.html','Utoren')"
+                                role="button"
+                                class="link-class"
+                                ><span class="rw-class">View </span></a
+                              >
+                              <span class="black">|</span>
+                              <a href="contractsign.html"
+                                ><span class="sp-class2"> Edit </span></a
+                              >
+                              <span class="black">|</span>
+                              <a href="contractsign.html"
+                                ><span class="del"> delete</span></a
+                              >
+                            </p>
+                          </td>
+                          <td>Questions</td>
+                          <td>vfcghvjkl;</td>
+                          <td>90</td>
+                          <td>2023-05-23 14:58:13</td>
+                        </tr>
+                        <tr>
+                          <td><input type="checkbox" /></td>
+                          <td>
+                            <br />
+                            <a
+                              href="../../Contracts/contracts.html"
+                              class="rw-class custom-name"
+                              >judy</a
+                            >
+                            <p class="header-effect">
+                              <a
+                                onclick="showMdModal('code/tab/contract_profile_modal.html.html','Utoren')"
+                                role="button"
+                                class="link-class"
+                                ><span class="rw-class">View </span></a
+                              >
+                              <span class="black">|</span>
+                              <a href="contractsign.html"
+                                ><span class="sp-class2"> Edit </span></a
+                              >
+                              <span class="black">|</span>
+                              <a href="contractsign.html"
+                                ><span class="del"> delete</span></a
+                              >
+                            </p>
+                          </td>
+                          <td>Questions</td>
+                          <td></td>
+                          <td>2</td>
+                          <td>2023-05-12 13:56:52</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- training libraries -->
+            <!-- 2 -->
+            <div id="contract" class="tabcontent1" style="display: none">
+              <div class="row pt-2">
+                <div>
+                    Contents for second tab here
+                </div>
+                </div>
+              </div>
+
+               <div id="dependant" class="tabcontent1" style="display: none">
+              <div class="row">
+               <div>
+                contents for the 3rd tab here
+               </div>
+              </div>
+             
+            </div>
+            </div>
+            <!-- training results -->
+            <!-- 3 -->
+
+
+         
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!---Modal---->
+
+    <div class="modal fade" id="modal_md" role="dialog">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="btn-close closebtn"
+              data-bs-dismiss="modal"
+            ></button>
+            <h5 class="modal-title"></h5>
+          </div>
+          <div class="modal-body"></div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      $("#modal_md").on("shown.bs.modal", function () {
+        $(".selectpicker").selectpicker("refresh");
+      });
+    </script>
+    <script>
+      function showMdModal(url, title) {
+        $("#modal_md").modal("show", { backdrop: "true" });
+        $.ajax({
+          url: url,
+          success: function (response) {
+            $("#modal_md .modal-title").html(title);
+            $("#modal_md .modal-body").html(response);
+          },
+        });
+      }
+    </script>
+
+    <!--Scroll---->
+    <script>
+      function leftScroll() {
+        const left = document.querySelector(".scroll-images");
+        left.scrollBy(-270, 0);
+      }
+      function rightScroll() {
+        const right = document.querySelector(".scroll-images");
+        right.scrollBy(280, 0);
+      }
+    </script>
+
+    <!-- Tabs--->
+    <script>
+      function opentab(evt, tabName1) {
+        var i, tabcontent1, tablinks1;
+        tabcontent1 = document.getElementsByClassName("tabcontent1");
+        for (i = 0; i < tabcontent1.length; i++) {
+          tabcontent1[i].style.display = "none";
+        }
+        tablinks1 = document.getElementsByClassName("tablinks1");
+        for (i = 0; i < tablinks1.length; i++) {
+          tablinks1[i].className = tablinks1[i].className.replace(
+            " active",
+            ""
+          );
+        }
+        document.getElementById(tabName1).style.display = "block";
+        evt.currentTarget.className += " active";
+      }
+    </script>
+
+    <script>
+      function opentab1(evt, tabName) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+          tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+          tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+        document.getElementById(tabName).style.display = "block";
+        evt.currentTarget.className += " active";
+      }
+    </script>
+
+    <!---Tabs--->
+    <script>
+      function opentab2(evt, tabName2) {
+        var i, tabcontent2, tablinks2;
+        tabcontent2 = document.getElementsByClassName("tabcontent2");
+        for (i = 0; i < tabcontent2.length; i++) {
+          tabcontent2[i].style.display = "none";
+        }
+        tablinks2 = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks2.length; i++) {
+          tablinks2[i].className = tablinks2[i].className.replace(
+            " active",
+            ""
+          );
+        }
+        document.getElementById(tabName2).style.display = "block";
+        evt.currentTarget.className += " active";
+      }
+    </script>
+
+    <script>
+      $(document).ready(function () {
+        var table = $(".example").DataTable({
+          language: { lengthMenu: "_MENU_" },
+          rowReorder: {
+            selector: "td:nth-child(2)",
+          },
+          responsive: true,
+
+          dom: "Blfrtip",
+          buttons: [
+            {
+              text: "EXPORT",
+              extend: "collection",
+              buttons: ["excel", "csv", "pdf", "print"],
+              className: "px-3",
+            },
+            {
+              text: '<i class="bi bi-arrow-repeat p-1" style="font-size:12px"></i>',
+            },
+          ],
+        });
+      });
+    </script>
+
+    <!--Upload files--->
+    <script>
+      var dropzone = new Dropzone("#demo-upload", {
+        previewTemplate: document.querySelector("#preview-template").innerHTML,
+        parallelUploads: 2,
+        thumbnailHeight: 120,
+        thumbnailWidth: 120,
+        maxFilesize: 3,
+        filesizeBase: 1000,
+        thumbnail: function (file, dataUrl) {
+          if (file.previewElement) {
+            file.previewElement.classList.remove("dz-file-preview");
+            var images = file.previewElement.querySelectorAll(
+              "[data-dz-thumbnail]"
+            );
+            for (var i = 0; i < images.length; i++) {
+              var thumbnailElement = images[i];
+              thumbnailElement.alt = file.name;
+              thumbnailElement.src = dataUrl;
+            }
+            setTimeout(function () {
+              file.previewElement.classList.add("dz-image-preview");
+            }, 1);
+          }
+        },
+      });
+      var minSteps = 6,
+        maxSteps = 60,
+        timeBetweenSteps = 100,
+        bytesPerStep = 100000;
+
+      dropzone.uploadFiles = function (files) {
+        var self = this;
+
+        for (var i = 0; i < files.length; i++) {
+          var file = files[i];
+          totalSteps = Math.round(
+            Math.min(maxSteps, Math.max(minSteps, file.size / bytesPerStep))
+          );
+
+          for (var step = 0; step < totalSteps; step++) {
+            var duration = timeBetweenSteps * (step + 1);
+            setTimeout(
+              (function (file, totalSteps, step) {
+                return function () {
+                  file.upload = {
+                    progress: (100 * (step + 1)) / totalSteps,
+                    total: file.size,
+                    bytesSent: ((step + 1) * file.size) / totalSteps,
+                  };
+                  self.emit(
+                    "uploadprogress",
+                    file,
+                    file.upload.progress,
+                    file.upload.bytesSent
+                  );
+                  if (file.upload.progress == 100) {
+                    file.status = Dropzone.SUCCESS;
+                    self.emit("success", file, "success", null);
+                    self.emit("complete", file);
+                    self.processQueue();
+                    //document.getElementsByClassName("dz-success-mark").style.opacity = "1";
+                  }
+                };
+              })(file, totalSteps, step),
+              duration
+            );
+          }
+        }
+      };
+    </script>
+  </body>
+</html>

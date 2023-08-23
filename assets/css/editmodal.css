@@ -1,0 +1,61 @@
+*{
+    font-family: Roboto;
+}
+
+.pro{
+    padding-right: 10px;
+    color: #02a9f4;
+}
+
+.check1{
+    margin-right: 5px;
+}
+
+.top-text{
+    margin-left: 5px;
+}
+
+.profile-con{
+    height: 155px;
+    width: 155px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 5px solid #bfcbd9;
+}
+
+.profile-image{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.label-txt{
+    font-size: 12px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.astrk{
+    color: red;
+}
+
+.input-item{
+    border: 1px solid #bfcbd9;
+    padding: 5px 6px;
+    border-radius: 3px;
+}
+
+.member-depart{
+    margin-top: 20px;
+}
+
+.aa{
+    background-color: #03a9f4;
+    color: #fff;
+    border: none;
+    padding: 5px 8px;
+    width: 65px;
+    border-radius: 4px;
+}
